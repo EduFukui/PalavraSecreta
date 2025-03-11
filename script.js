@@ -114,9 +114,12 @@ function verificarLetra() {
     }
 }
 
-document.getElementById('letra').addEventListener('keypress', function(event) /* Escuta quando uma tecla é pressionada no campo de entrada. */ {
-    if (event.key === 'Enter'/* Verifica se a tecla pressionada foi "Enter". */) {
-        verificarLetra(); // Chama a função de verificação automaticamente
+document.getElementById('letra').addEventListener('keypress', function(event) {
+/* Escuta quando uma tecla é pressionada no campo de entrada. */ 
+    if (event.key === 'Enter') {
+        /* Verifica se a tecla pressionada foi "Enter". */
+        verificarLetra(); 
+        // Chama a função de verificação automaticamente
     }
 });
 
